@@ -39,6 +39,7 @@ _private.loadNconf = function loadNconf(options) {
     // set settings manually from azure app service
     if (process.env.PORT) {
         nconf.set('server:port', process.env.PORT);
+        process.env.server__port = process.env.PORT;
     }
 
     /**
